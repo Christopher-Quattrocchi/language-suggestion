@@ -5,8 +5,32 @@ window.addEventListener("load", function () {
 
 function saveChoice(event) {
   event.preventDefault();
-  const div = document.getElementsByTagName("div");
-  div.classList.add("hidden");
+
+  const fronthide = document.getElementById("front-end");
+  fronthide.classList.replace("hideme", "hidden");
+  const backhide = document.getElementById("back-end");
+  backhide.classList.replace("hideme", "hidden");
+  const fullhide = document.getElementById("full-stack");
+  fullhide.classList.replace("hideme", "hidden");
+
+  const mobilehide = document.getElementById("mobile-app");
+  mobilehide.classList.replace("hideme", "hidden");
+  const webhide = document.getElementById("web-app");
+  webhide.classList.replace("hideme", "hidden");
+  const deskhide = document.getElementById("desktop-app");
+  deskhide.classList.replace("hideme", "hidden");
+
+  const gaminghide = document.getElementById("gaming");
+  gaminghide.classList.replace("hideme", "hidden");
+  const autohide = document.getElementById("automation");
+  autohide.classList.replace("hideme", "hidden");
+  const bothide = document.getElementById("bots");
+  bothide.classList.replace("hideme", "hidden");
+  const moneyhide = document.getElementById("money");
+  moneyhide.classList.replace("hideme", "hidden");
+ 
+  // const div = document.getElementsByTagName("div");
+  // div.classList.add("hidden");
 
   // console.log(event);
   // console.log(event.target);
@@ -33,42 +57,42 @@ function saveChoice(event) {
 function displayLangStack(langSelect) {
   if (langSelect === "frontend") {
     let frontend = document.getElementById("front-end");
-    frontend.removeAttribute("class");
+    frontend.classList.replace("hidden", "hideme");
   } else if (langSelect === "backend") {
     let backend = document.getElementById("back-end");
-    backend.removeAttribute("class");
+    backend.classList.replace("hidden", "hideme");
   } else if (langSelect === "fullstack") {
     let fullstack = document.getElementById("full-stack");
-    fullstack.removeAttribute("class");
+    fullstack.classList.replace("hidden", "hideme");
   }
 }
 
 function displayAppSelect(appSelect) {
   if (appSelect === "mobileapp") {
     let mobileapp = document.getElementById("mobile-app");
-    mobileapp.removeAttribute("class");
+    mobileapp.classList.replace("hidden", "hideme");
   } else if (appSelect === "webapp") {
     let webapp = document.getElementById("web-app");
-    webapp.removeAttribute("class");
+    webapp.classList.replace("hidden", "hideme");
   } else if (appSelect === "deskapp") {
     let desktopapp = document.getElementById("desktop-app");
-    desktopapp.removeAttribute("class");
+    desktopapp.classList.replace("hidden", "hideme");
   }
 }
 
 function displayInterestSelect(interestSelect) {
   if (interestSelect === "gaming") {
     let gaming = document.getElementById("gaming");
-    gaming.removeAttribute("class");
+    gaming.classList.replace("hidden", "hideme");
   } else if (interestSelect === "automation") {
     let automation = document.getElementById("automation");
-    automation.removeAttribute("class");
+    automation.classList.replace("hidden", "hideme");
   } else if (interestSelect === "bots") {
     let bots = document.getElementById("bots");
-    bots.removeAttribute("class");
+    bots.classList.replace("hidden", "hideme");
   } else if (interestSelect === "money") {
     let gaming = document.getElementById("money");
-    gaming.removeAttribute("class");
+    gaming.classList.replace("hidden", "hideme");
   }
 }
 
