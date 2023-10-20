@@ -23,6 +23,7 @@ function saveChoice(event) {
   // return interestSelect;
   displayLangStack(langSelect);
   displayAppSelect(appSelect);
+  displayInterestSelect(interestSelect);
 }
 
 
@@ -46,7 +47,24 @@ function displayAppSelect(appSelect) {
   } else if (appSelect === "webapp") {
     let webapp = document.getElementById("web-app");
     webapp.removeAttribute("class");
-  } else if (appSelect === "desktop-app");
+  } else if (appSelect === "deskapp") {
     let desktopapp = document.getElementById("desktop-app");
     desktopapp.removeAttribute("class");
+  }
+}
+
+function displayInterestSelect(interestSelect) {
+  if (interestSelect === "gaming") {
+    let gaming = document.getElementById("gaming");
+    gaming.removeAttribute("class");
+  } else if (interestSelect === "automation") {
+    let automation = document.getElementById("automation");
+    automation.removeAttribute("class");
+  } else if (interestSelect === "bots") {
+    let bots = document.getElementById("bots");
+    bots.removeAttribute("class");
+  } else if (interestSelect === "money") {
+    let gaming = document.getElementById("money");
+    gaming.removeAttribute("class");
+  }
 }
