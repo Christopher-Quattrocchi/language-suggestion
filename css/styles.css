@@ -1,3 +1,54 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+div {
+  
+  margin-top: 10px;
+}
+
+.hideme {
+  margin-left: 15px;
+  text-align: center;
+  background-color: grey;
+  width: 200px;
+  border: solid red 2px;
+  border-radius: 25px;
+}
+
+.flexy {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin-top: 10px;
+}
+
+label#green {
+  color: rgb(36, 250, 36);
+}

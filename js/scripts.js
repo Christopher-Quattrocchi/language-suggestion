@@ -38,7 +38,7 @@ function saveChoice(event) {
   bothide.classList.replace("hideme", "hidden");
   const moneyhide = document.getElementById("money");
   moneyhide.classList.replace("hideme", "hidden");
- 
+
   // const div = document.getElementsByTagName("div");
   // div.classList.add("hidden");
 
@@ -67,7 +67,7 @@ function saveChoice(event) {
   displayDogSelect(dogSelect);
   displayCatSelect(catSelect);
   displayInterestSelect(interestSelect);
-  
+
 }
 
 
