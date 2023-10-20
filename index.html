@@ -13,53 +13,50 @@
   <p>Deciding which languages you want to prioritize depends on your goals and interests. This form should help you determine what makes the most sense for you.</p>
 
   <form id="lang-select">
-    <label for="select-form">
-      <p>Front End, Back End, or Full Stack?</p>
+    <label for="frontOrBack">Front End, Back End, or Full Stack?</label>
       <select id="frontOrBack">
         <option value="frontend">Front End</option>
         <option value="backend">Back End</option>
         <option value="fullstack">Full Stack</option>
       </select>
-    </label>
+    
 
-    <label for="select-form">
-      <p>What kind of app do you want to create?</p>
+    <label for="appSelect">What kind of app do you want to create?</label>
       <select id="appSelect">
         <option value="mobileapp">Mobile Apps</option>
         <option value="webapp">Web Apps</option>
         <option value="deskapp">Desktop Apps</option>
       </select>
-    </label>
+    
 
-    <label for="select-form">
-      <p>What kind of app do you want to create?</p>
+    <label for="dogSelect">Which dog breed do you prefer?</label>
       <select id="dogSelect">
         <option value="canecorso">Cane Corso</option>
         <option value="goldenretriever">Golden Retriever</option>
       </select>
-    </label>
+    
 
-    <label for="select-form">
-      <p>What kind of app do you want to create?</p>
+    <label for="catSelect">Which cat breed do you prefer?</label>
       <select id="catSelect">
         <option value="bengal">Bengal</option>
         <option value="siberian">Siberian</option>
       </select>
-    </label>
+   
 
-    <label for="radio-form">
+    
       <p>Which of do you find most interesting?</p>
-      <input type="radio" name="interest" value="gaming" checked="checked">
-      <label for="interest">Gaming</label>
-      <input type="radio" name="interest" value="automation">
-      <label for="interest">Automation</label>
-      <input type="radio" name="interest" value="bots">
-      <label for="interest">Bots</label>
-      <input type="radio" name="interest" value="money">
-      <label for="interest">I just want money</label>
+
+      <label for="gaming-option">Gaming</label>
+      <input type="radio" id="gaming-option" name="interest" value="gaming" checked="checked">
+      <label for="automation-option">Automation</label>
+      <input type="radio" id="automation-option" name="interest" value="automation">
+      <label for="bot-option">Bots</label>
+      <input type="radio" id="bot-option" name="interest" value="bots">
+      <label for="money-option">I just want money</label>
+      <input type="radio" id="money-option" name="interest" value="money">
+      
 
       <button type="submit">Submit!</button>
-    </label>
   </form>
 
   <div id="front-end" class="hidden">
