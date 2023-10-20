@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css">
+  <link rel="stylesheet" href="css" type="text/css">
   <title>Document</title>
 </head>
 <body>
@@ -16,17 +16,12 @@
     <label for="select-form">
       <p>Do you prefer Front or Back End Development?</p>
       <select id="frontOrBack">
-        <option value="1">Front End</option>
-        <option value="2">Back End</option>
-        <option value="3">Full Stack</option>
-      </select>
-    </label>
-
-    <label for="apps">
-      <select id="whichApps">
-        <option value="4">Mobile Apps</option>
-        <option value="5">Web Apps</option>
-        <option value="6">Desktop Apps</option>
+        <option value="frontend">Front End</option>
+        <option value="backend">Back End</option>
+        <option value="fullstack">Full Stack</option>
+        <option value="mobileapp">Mobile Apps</option>
+        <option value="webapp">Web Apps</option>
+        <option value="deskapp">Desktop Apps</option>
       </select>
     </label>
 
@@ -40,7 +35,11 @@
       <label for="interest">Bots</label>
       <input type="radio" name="interest" value="money">
       <label for="interest">I just want money</label>
+
+      <button type="submit">Submit!</button>
     </label>
+
+
 
   </form>
 
