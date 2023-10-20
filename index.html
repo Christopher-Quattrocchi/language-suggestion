@@ -13,8 +13,33 @@
   <p>Deciding which languages you want to prioritize depends on your goals and interests. This form should help you determine what makes the most sense for you.</p>
 
   <form id="lang-select">
+    <label for="select-form">
+      <p>Do you prefer Front or Back End Development?</p>
+      <select id="frontOrBack">
+        <option value="1">Front End</option>
+        <option value="2">Back End</option>
+        <option value="3">Full Stack</option>
+      </select>
+    </label>
+
+    <label for="apps">
+      <select id="whichApps">
+        <option value="4">Mobile Apps</option>
+        <option value="5">Web Apps</option>
+        <option value="6">Desktop Apps</option>
+      </select>
+    </label>
+
     <label for="radio-form">
-      
+      <p>What topics interest you?</p>
+      <input type="radio" name="interest" value="gaming">
+      <label for="interest">Gaming</label>
+      <input type="radio" name="interest" value="automation">
+      <label for="interest">Automation</label>
+      <input type="radio" name="interest" value="bots">
+      <label for="interest">Bots</label>
+      <input type="radio" name="interest" value="money">
+      <label for="interest">I just want money</label>
     </label>
 
 
