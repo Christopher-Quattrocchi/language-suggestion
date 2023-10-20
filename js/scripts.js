@@ -1,9 +1,9 @@
 window.addEventListener("load", function() {
   const form = document.getElementById("lang-select");
-  form.addEventListener("submit", selectLang);
+  form.addEventListener("submit", saveChoice);
 });
 
-function selectLang(event) {
+function saveChoice(event) {
   event.preventDefault();
   console.log(event);
   console.log(event.target);
@@ -14,7 +14,8 @@ function selectLang(event) {
 
   const appSelect = document.getElementById("appSelect").value;
   console.log(appSelect);
-  
+
   const interestSelect = document.querySelector("input[name='interest']:checked").value;
   console.log(interestSelect);
 }
+
