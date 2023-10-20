@@ -20,6 +20,16 @@ function saveChoice(event) {
   const deskhide = document.getElementById("desktop-app");
   deskhide.classList.replace("hideme", "hidden");
 
+  const corsohide = document.getElementById("corso");
+  corsohide.classList.replace("hideme", "hidden");
+  const goldenhide = document.getElementById("golden");
+  goldenhide.classList.replace("hideme", "hidden");
+
+  const bengalhide = document.getElementById("bengal");
+  bengalhide.classList.replace("hideme", "hidden");
+  const siberianhide = document.getElementById("siberian");
+  siberianhide.classList.replace("hideme", "hidden");
+
   const gaminghide = document.getElementById("gaming");
   gaminghide.classList.replace("hideme", "hidden");
   const autohide = document.getElementById("automation");
@@ -42,15 +52,22 @@ function saveChoice(event) {
   const appSelect = document.getElementById("appSelect").value;
   // return appSelect;
 
+  const dogSelect = document.getElementById("dogSelect").value;
+
+  const catSelect = document.getElementById("catSelect").value;
+
   const interestSelect = document.querySelector("input[name='interest']:checked").value;
 
-  console.log(langSelect, appSelect, interestSelect);
+  console.log(langSelect, appSelect, dogSelect, catSelect, interestSelect);
 
 
   // return interestSelect;
   displayLangStack(langSelect);
   displayAppSelect(appSelect);
+  displayDogSelect(dogSelect);
+  displayCatSelect(catSelect);
   displayInterestSelect(interestSelect);
+  
 }
 
 
@@ -79,6 +96,28 @@ function displayAppSelect(appSelect) {
     desktopapp.classList.replace("hidden", "hideme");
   }
 }
+
+function displayDogSelect(dogSelect) {
+  if (dogSelect === "canecorso") {
+    let corso = document.getElementById("corso");
+    corso.classList.replace("hidden", "hideme");
+  } else if (dogSelect === "goldenretriever") {
+    let golden = document.getElementById("golden");
+    golden.classList.replace("hidden", "hideme");
+  }
+}
+
+function displayCatSelect(catSelect) {
+  if (catSelect === "bengal") {
+    let bengal = document.getElementById("bengal");
+    bengal.classList.replace("hidden", "hideme");
+  } else if (catSelect === "siberian") {
+    let siberian = document.getElementById("siberian");
+    siberian.classList.replace("hidden", "hideme");
+  }
+}
+
+
 
 function displayInterestSelect(interestSelect) {
   if (interestSelect === "gaming") {
