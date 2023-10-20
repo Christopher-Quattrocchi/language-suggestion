@@ -5,6 +5,9 @@ window.addEventListener("load", function () {
 
 function saveChoice(event) {
   event.preventDefault();
+  const div = document.getElementsByTagName("div");
+  div.classList.add("hidden");
+
   // console.log(event);
   // console.log(event.target);
 
@@ -68,3 +71,4 @@ function displayInterestSelect(interestSelect) {
     gaming.removeAttribute("class");
   }
 }
+
