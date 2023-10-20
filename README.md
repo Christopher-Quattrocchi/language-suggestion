@@ -29,8 +29,10 @@ _HTML, CSS, Git and JS were used in the creation of this page_
 
 ## Link to gh-pages
 
+
 [gh-pages link]([
 ](https://christopher-quattrocchi.github.io/language-suggestion/)
+https://christopher-quattrocchi.github.io/language-suggestion/
 
 ### License
 
