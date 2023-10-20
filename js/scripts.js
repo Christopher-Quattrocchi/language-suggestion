@@ -22,6 +22,7 @@ function saveChoice(event) {
 
   // return interestSelect;
   displayLangStack(langSelect);
+  displayAppSelect(appSelect);
 }
 
 
@@ -36,4 +37,16 @@ function displayLangStack(langSelect) {
     let fullstack = document.getElementById("full-stack");
     fullstack.removeAttribute("class");
   }
+}
+
+function displayAppSelect(appSelect) {
+  if (appSelect === "mobileapp") {
+    let mobileapp = document.getElementById("mobile-app");
+    mobileapp.removeAttribute("class");
+  } else if (appSelect === "webapp") {
+    let webapp = document.getElementById("web-app");
+    webapp.removeAttribute("class");
+  } else if (appSelect === "desktop-app");
+    let desktopapp = document.getElementById("desktop-app");
+    desktopapp.removeAttribute("class");
 }
