@@ -30,40 +30,128 @@ function saveChoice(event) {
   //default suggestion placeholder
   let suggestion = "HTML";
 
-  //attempt at branching with nested ifs
   if (langSelect === "frontend") {
     if (appSelect === "mobileapp") {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "placeholder";
+            suggestion = "1";
           } else if (interestSelect === "automation") {
-            suggestion = "placeholder2";
-          } else if (interestSelect === "bots") {
-            suggestion = "placeholder3";
-          } else if (interestSelect === "money") {
-            suggestion = "placeholder4";
+            suggestion = "2";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "placeholder5";
+            suggestion = "3";
           } else if (interestSelect === "automation") {
-            suggestion = "placeholder6";
-          } else if (interestSelect === "bots") {
-            suggestion = "placeholder7";
-          } else if (interestSelect === "money") {
-            suggestion = "placeholder8";
+            suggestion = "4";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
-          suggestion = "placeholder9";
-        } else if (catSelect === "siberian") {
-          suggestion = "placeholder10";
+          if (interestSelect === "gaming") {
+            suggestion = "5";
+          } else if (interestSelect === "automation") {
+            suggestion = "6";
+          }
         }
       }
     }
   }
+
+  //attempt at branching with nested ifs
+  // if (langSelect === "frontend") {
+  //   if (appSelect === "mobileapp") {
+  //     if (dogSelect === "canecorso") {
+  //       if (catSelect === "bengal") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder2";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder3";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder4";
+  //         }
+  //       } else if (catSelect === "siberian") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder5";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder6";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder7";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder8";
+  //         }
+  //       }
+  //     } else if (dogSelect === "goldenretriever") {
+  //       if (catSelect === "bengal") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder9";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder10";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder11";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder12";
+  //         }
+  //       } else if (catSelect === "siberian") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder13";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder14";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder15";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder16";
+  //         }
+  //       }
+  //     }
+  //   } else if (appSelect === "webapp") {
+  //     if (dogSelect === "canecorso") {
+  //       if (catSelect === "bengal") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder17";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder18";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder19";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder20";
+  //         }
+  //       } else if (catSelect === "siberian") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder21";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder22";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder23";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder24";
+  //         }
+  //       }
+  //     } else if (dogSelect === "goldenretriever") {
+  //       if (catSelect === "bengal") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder25";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder26";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder27";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder28";
+  //         }
+  //       } else if (catSelect === "siberian") {
+  //         if (interestSelect === "gaming") {
+  //           suggestion = "placeholder29";
+  //         } else if (interestSelect === "automation") {
+  //           suggestion = "placeholder30";
+  //         } else if (interestSelect === "bots") {
+  //           suggestion = "placeholder31";
+  //         } else if (interestSelect === "money") {
+  //           suggestion = "placeholder32";
+  //         }
+  //   }
+  // }
   let suggestionDiv = document.getElementById("suggestiondiv");
   suggestionDiv.classList.replace("hidden", "hideme");
   let suggestionPara = document.getElementById("suggestion");
