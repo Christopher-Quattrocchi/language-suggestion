@@ -17,47 +17,41 @@ function saveChoice(event) {
   const catSelect = document.getElementById("catSelect").value;
   const interestSelect = document.querySelector("input[name='interest']:checked").value;
 
-  //testing
+  //debug
   console.log(langSelect, appSelect, dogSelect, catSelect, interestSelect);
 
-  // return interestSelect;
-  // displayLangStack(langSelect);
-  // displayAppSelect(appSelect);
-  // displayDogSelect(dogSelect);
-  // displayCatSelect(catSelect);
-  // displayInterestSelect(interestSelect);
-
-  //default suggestion placeholder
+  //create suggestion var with a default value to be updated
   let suggestion = "HTML";
 
+  //branching
   if (langSelect === "frontend") {
     if (appSelect === "mobileapp") {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "1";
+            suggestion = "HTML 1";
           } else if (interestSelect === "automation") {
-            suggestion = "2";
+            suggestion = "CSS 2";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "3";
+            suggestion = "JavaScript 3";
           } else if (interestSelect === "automation") {
-            suggestion = "4";
+            suggestion = "C# 4";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "5";
+            suggestion = "Scala 5";
           } else if (interestSelect === "automation") {
-            suggestion = "6";
+            suggestion = "Lisp 6";
           } 
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "7";
+            suggestion = "React 7";
           } else if (interestSelect === "automation") {
-            suggestion = "8";
+            suggestion = "Go 8";
           }
         }
       }
@@ -65,29 +59,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "9";
+            suggestion = "C++ 9";
           } else if (interestSelect === "automation") {
-            suggestion = "10";
+            suggestion = "Python 10";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "11";
+            suggestion = "SQL 11";
           } else if (interestSelect === "automation") {
-            suggestion = "12";
+            suggestion = "jQuery 12";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "13";
+            suggestion = "Java 13";
           } else if (interestSelect === "automation") {
-            suggestion = "14";
+            suggestion = "Ruby 14";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "15";
+            suggestion = "PHP 15";
           } else if (interestSelect === "automation") {
-            suggestion = "16";
+            suggestion = "Rust 16";
           }
         }
       }
@@ -97,29 +91,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "17";
+            suggestion = "ASP.net 17";
           } else if (interestSelect === "automation") {
-            suggestion = "18";
+            suggestion = "Swift 18";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "19";
+            suggestion = "Node 19";
           } else if (interestSelect === "automation") {
-            suggestion = "20";
+            suggestion = "Haskell 20";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "21";
+            suggestion = "COBOL 21";
           } else if (interestSelect === "automation") {
-            suggestion = "22";
+            suggestion = "R 22";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "23";
+            suggestion = "TypeScript 23";
           } else if (interestSelect === "automation") {
-            suggestion = "24";
+            suggestion = "Kotlin 24";
           }
         }
       }
@@ -127,131 +121,39 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "25";
+            suggestion = "Angular 25";
           } else if (interestSelect === "automation") {
-            suggestion = "26";
+            suggestion = "Bootstrap 26";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "27";
+            suggestion = "C 27";
           } else if (interestSelect === "automation") {
-            suggestion = "28";
+            suggestion = "Django 28";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "29";
+            suggestion = "Flask 29";
           } else if (interestSelect === "automation") {
-            suggestion = "30";
+            suggestion = "SASS 30";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "31";
+            suggestion = "Vue 31";
           } else if (interestSelect === "automation") {
-            suggestion = "32";
+            suggestion = "Ember 32";
           }
         }
       }
     }
   }
 
-  //attempt at branching with nested ifs
-  // if (langSelect === "frontend") {
-  //   if (appSelect === "mobileapp") {
-  //     if (dogSelect === "canecorso") {
-  //       if (catSelect === "bengal") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder2";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder3";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder4";
-  //         }
-  //       } else if (catSelect === "siberian") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder5";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder6";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder7";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder8";
-  //         }
-  //       }
-  //     } else if (dogSelect === "goldenretriever") {
-  //       if (catSelect === "bengal") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder9";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder10";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder11";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder12";
-  //         }
-  //       } else if (catSelect === "siberian") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder13";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder14";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder15";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder16";
-  //         }
-  //       }
-  //     }
-  //   } else if (appSelect === "webapp") {
-  //     if (dogSelect === "canecorso") {
-  //       if (catSelect === "bengal") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder17";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder18";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder19";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder20";
-  //         }
-  //       } else if (catSelect === "siberian") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder21";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder22";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder23";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder24";
-  //         }
-  //       }
-  //     } else if (dogSelect === "goldenretriever") {
-  //       if (catSelect === "bengal") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder25";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder26";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder27";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder28";
-  //         }
-  //       } else if (catSelect === "siberian") {
-  //         if (interestSelect === "gaming") {
-  //           suggestion = "placeholder29";
-  //         } else if (interestSelect === "automation") {
-  //           suggestion = "placeholder30";
-  //         } else if (interestSelect === "bots") {
-  //           suggestion = "placeholder31";
-  //         } else if (interestSelect === "money") {
-  //           suggestion = "placeholder32";
-  //         }
-  //   }
-  // }
+  //target and unhide hidden div
   let suggestionDiv = document.getElementById("suggestiondiv");
   suggestionDiv.classList.replace("hidden", "hideme");
+  //put suggestion variable in hidden p tag
   let suggestionPara = document.getElementById("suggestion");
   suggestionPara.innerHTML = suggestion.toString();
 
