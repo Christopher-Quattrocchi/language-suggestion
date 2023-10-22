@@ -29,29 +29,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "HTML 1";
+            suggestion = "HTML (1)";
           } else if (interestSelect === "automation") {
-            suggestion = "CSS 2";
+            suggestion = "CSS (2)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "JavaScript 3";
+            suggestion = "JavaScript (3)";
           } else if (interestSelect === "automation") {
-            suggestion = "C# 4";
+            suggestion = "C# (4)";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "Scala 5";
+            suggestion = "Scala (5)";
           } else if (interestSelect === "automation") {
-            suggestion = "Lisp 6";
+            suggestion = "Lisp (6)";
           } 
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "React 7";
+            suggestion = "React (7)";
           } else if (interestSelect === "automation") {
-            suggestion = "Go 8";
+            suggestion = "Go (8)";
           }
         }
       }
@@ -59,29 +59,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "C++ 9";
+            suggestion = "C++ (9)";
           } else if (interestSelect === "automation") {
-            suggestion = "Python 10";
+            suggestion = "Python (10)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "SQL 11";
+            suggestion = "SQL (11)";
           } else if (interestSelect === "automation") {
-            suggestion = "jQuery 12";
+            suggestion = "jQuery (12)";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "Java 13";
+            suggestion = "Java (13)";
           } else if (interestSelect === "automation") {
-            suggestion = "Ruby 14";
+            suggestion = "Ruby (14)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "PHP 15";
+            suggestion = "PHP (15)";
           } else if (interestSelect === "automation") {
-            suggestion = "Rust 16";
+            suggestion = "Rust (16)";
           }
         }
       }
@@ -91,29 +91,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "ASP.net 17";
+            suggestion = "ASP.net (17)";
           } else if (interestSelect === "automation") {
-            suggestion = "Swift 18";
+            suggestion = "Swift (18)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "Node 19";
+            suggestion = "Node (19)";
           } else if (interestSelect === "automation") {
-            suggestion = "Haskell 20";
+            suggestion = "Haskell (20)";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "COBOL 21";
+            suggestion = "COBOL (21)";
           } else if (interestSelect === "automation") {
-            suggestion = "R 22";
+            suggestion = "R (22)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "TypeScript 23";
+            suggestion = "TypeScript (23)";
           } else if (interestSelect === "automation") {
-            suggestion = "Kotlin 24";
+            suggestion = "Kotlin (24)";
           }
         }
       }
@@ -121,29 +121,29 @@ function saveChoice(event) {
       if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "Angular 25";
+            suggestion = "Angular (25)";
           } else if (interestSelect === "automation") {
-            suggestion = "Bootstrap 26";
+            suggestion = "Bootstrap (26)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "C 27";
+            suggestion = "C (27)";
           } else if (interestSelect === "automation") {
-            suggestion = "Django 28";
+            suggestion = "Django (28)";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "Flask 29";
+            suggestion = "Flask (29)";
           } else if (interestSelect === "automation") {
-            suggestion = "SASS 30";
+            suggestion = "SASS (30)";
           }
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
-            suggestion = "Vue 31";
+            suggestion = "Vue (31)";
           } else if (interestSelect === "automation") {
-            suggestion = "Ember 32";
+            suggestion = "Ember (32)";
           }
         }
       }
