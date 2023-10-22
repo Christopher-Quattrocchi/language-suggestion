@@ -10,8 +10,6 @@ function saveChoice(event) {
   const suggestionhide = document.getElementById("suggestion");
   suggestion.classList.replace("hideme", "hidden");
   
-
-
   //store user input
   const langSelect = document.getElementById("frontOrBack").value;
   const appSelect = document.getElementById("appSelect").value;
@@ -22,7 +20,6 @@ function saveChoice(event) {
   //testing
   console.log(langSelect, appSelect, dogSelect, catSelect, interestSelect);
 
-
   // return interestSelect;
   displayLangStack(langSelect);
   displayAppSelect(appSelect);
@@ -30,7 +27,26 @@ function saveChoice(event) {
   displayCatSelect(catSelect);
   displayInterestSelect(interestSelect);
 
-}
+  //default suggestion placeholder
+  let suggestion = "HTML";
+
+  //attempt at branching with nested ifs
+  if (langSelect === "frontend") {
+    if (appSelect === "mobileapp") {
+      if (dogSelect === "canecorso") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "placeholder";
+          }
+        }
+      }
+    }
+  }
+
+let suggestionDiv = document.getElementById("suggestion");
+suggestionDiv.innerHTML = suggestion;
+
+} //end saveChoice function
 
 //get rid of this nonsense next
 // function displayLangStack(langSelect) {
