@@ -62,7 +62,7 @@ function saveChoice(event) {
         }
       }
     } else if (appSelect === "webapp") {
-      if (dogSelect === "canecorse") {
+      if (dogSelect === "canecorso") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
             suggestion = "9";
@@ -104,18 +104,52 @@ function saveChoice(event) {
         } else if (catSelect === "siberian") {
           if (interestSelect === "gaming") {
             suggestion = "19";
+          } else if (interestSelect === "automation") {
+            suggestion = "20";
           }
         }
       } else if (dogSelect === "goldenretriever") {
         if (catSelect === "bengal") {
           if (interestSelect === "gaming") {
-            suggestion = "20";
-          }
-        } else if (catSelect === "siberian") {
-          if (interestSelect === "gaming") {
             suggestion = "21";
           } else if (interestSelect === "automation") {
             suggestion = "22";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "23";
+          } else if (interestSelect === "automation") {
+            suggestion = "24";
+          }
+        }
+      }
+    } else if (appSelect === "webapp") {
+      if (dogSelect === "canecorso") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "25";
+          } else if (interestSelect === "automation") {
+            suggestion = "26";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "27";
+          } else if (interestSelect === "automation") {
+            suggestion = "28";
+          }
+        }
+      } else if (dogSelect === "goldenretriever") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "29";
+          } else if (interestSelect === "automation") {
+            suggestion = "30";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "31";
+          } else if (interestSelect === "automation") {
+            suggestion = "32";
           }
         }
       }
