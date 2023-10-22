@@ -52,6 +52,70 @@ function saveChoice(event) {
             suggestion = "5";
           } else if (interestSelect === "automation") {
             suggestion = "6";
+          } 
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "7";
+          } else if (interestSelect === "automation") {
+            suggestion = "8";
+          }
+        }
+      }
+    } else if (appSelect === "webapp") {
+      if (dogSelect === "canecorse") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "9";
+          } else if (interestSelect === "automation") {
+            suggestion = "10";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "11";
+          } else if (interestSelect === "automation") {
+            suggestion = "12";
+          }
+        }
+      } else if (dogSelect === "goldenretriever") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "13";
+          } else if (interestSelect === "automation") {
+            suggestion = "14";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "15";
+          } else if (interestSelect === "automation") {
+            suggestion = "16";
+          }
+        }
+      }
+    }
+  } else if (langSelect === "backend") {
+    if (appSelect === "mobileapp") {
+      if (dogSelect === "canecorso") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "17";
+          } else if (interestSelect === "automation") {
+            suggestion = "18";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "19";
+          }
+        }
+      } else if (dogSelect === "goldenretriever") {
+        if (catSelect === "bengal") {
+          if (interestSelect === "gaming") {
+            suggestion = "20";
+          }
+        } else if (catSelect === "siberian") {
+          if (interestSelect === "gaming") {
+            suggestion = "21";
+          } else if (interestSelect === "automation") {
+            suggestion = "22";
           }
         }
       }
