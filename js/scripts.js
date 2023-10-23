@@ -1,6 +1,15 @@
 window.addEventListener("load", function () {
   const form = document.getElementById("lang-select");
   form.addEventListener("submit", saveChoice);
+  
+  //darkmode toggle
+  this.document.getElementById("toggleDark").addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll("h1, p, label").forEach(function(element) {
+      element.classList.toggle('dark-mode');
+    })
+  })
+
 });
 
 function saveChoice(event) {

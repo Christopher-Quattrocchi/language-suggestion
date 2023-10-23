@@ -3,17 +3,34 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 {
+body.dark-mode {
+  background-color: black;
   color: white;
+}
+
+h1.dark-mode {
+  color: white;
+}
+
+p.dark-mode {
+  color: white;
+}
+
+label.dark-mode {
+  color: white;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 p {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -22,7 +39,7 @@ form {
 }
 
 label {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 div {
